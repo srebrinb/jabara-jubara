@@ -12,6 +12,12 @@ package bg.srebrinb.jabara.jubara.ciphers;
 public class JabaraJubara {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        //TODO hubav primern
+        String str="Hello World! Da si ebe majkta na 50 godini"; //Demo input 
+        System.out.println(str);
+        String eha=Loki.op(str); // Tuk stawa Jabara.Jubara Encrypt
+        System.out.println("eha = " + eha);
+        String ha=Loki.hopString(eha);
+        System.out.println("ha = " + ha); // Koj go kaza
     }
 }
