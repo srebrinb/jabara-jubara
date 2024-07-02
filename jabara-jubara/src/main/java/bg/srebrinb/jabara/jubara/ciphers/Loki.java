@@ -33,7 +33,6 @@ public class Loki  {
     public static String s135(String input,int len,int partLen) {
         String res="";
         if (input.length()>=len){
-            System.out.println("big");
             String part=input.substring(0, partLen); //Get 1/5 from input
             res=j135(part)+input.substring(partLen);
         }
