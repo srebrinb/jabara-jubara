@@ -1,5 +1,6 @@
 package bg.srebrinb.jabara.jubara.ciphers;
 
+import java.math.BigInteger;
 import org.apache.commons.codec.binary.Base64;
 
 /**
@@ -29,28 +30,26 @@ private static final double SHARE   = 0.3;
         }
         return sb.toString();
     }
-
     public static String s135(String input, int len, int partLen) {
         String res = "";
+        
         if (input.length() >= len) {
-            String part = input.substring(0, partLen); //Get 1/5 from input
-            res = j135(part) + input.substring(partLen);
+            String part = input.substring(0, partLen); //Get 1/5 from input by defaut
+            res = j135(part)+ input.substring(partLen);
         } else {
             res = j135(input);
         }
+        
         return res;
     }
 
     public static String s135(String input, int len) {
-        int partLen = (int) (input.length() * SHARE); //Get 1/5 from input
+        int partLen = (int) (input.length() * SHARE); //Get 1/5 from input by defaut
         return s135(input, len, partLen);
     }
 
     public static String s135(String input) {
-        int partLen = (int) (input.length() * SHARE); //Get 1/5 from input
-
-        if(partLen % 16==0) partLen++;
-        return s135(input, 50, partLen);
+        return s135(input, 50);
     }
 
     public static String op(String input) {
