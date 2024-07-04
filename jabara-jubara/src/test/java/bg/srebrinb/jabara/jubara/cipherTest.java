@@ -44,7 +44,7 @@ public class cipherTest {
     @org.junit.jupiter.api.Test
     public void testJ135() {
         System.out.println("j135");
-        String input = "asdfFFFFEWrfvas35678)(HDdadgasdg23456";
+        String input = "The quick brown fox jumps over 12 lazy dogs!";
         System.out.println("input = " + input);
         String tmp = Loki.j135(input);
         System.out.println("tmp:"+tmp);
@@ -55,7 +55,7 @@ public class cipherTest {
     @Test
     public void testS135() {
          System.out.println("Small 135");
-        String input = "asdfFFFFEWrfvas35678)(HDdadgasdg23456";
+        String input = "Тест: Г-н Жълтищев бързо фиксира 1234567890";
         System.out.println("input = " + input);
         String tmp = Loki.s135(input);
         System.out.println("tmp:"+tmp);
@@ -65,7 +65,7 @@ public class cipherTest {
         @Test
     public void testS135Big() {
          System.out.println("Big 135");
-        String input = "1234567890abcdefg1234567890";
+        String input = "Тест: Г-н Жълтищев бързо фиксира, че English текст: The quick brown fox jumps over 12 lazy dogs! 1234567890.";
         System.out.println("len:"+ input.length() +"\tinput = " + input);
         String tmp = Loki.s135(input);
         System.out.println("tmp:"+tmp);
