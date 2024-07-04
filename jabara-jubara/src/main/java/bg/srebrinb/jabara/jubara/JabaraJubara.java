@@ -3,7 +3,9 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Project/Maven2/JavaApp/src/main/java/${packagePath}/${mainClassName}.java to edit this template
  */
 
-package bg.srebrinb.jabara.jubara.ciphers;
+package bg.srebrinb.jabara.jubara;
+
+import bg.srebrinb.jabara.jubara.ciphers.Loki;
 
 /**
  *
@@ -13,7 +15,7 @@ public class JabaraJubara {
 
     public static void main(String[] args) {
         //TODO hubav primern
-        String str="Hello World! Da si ebe majkta na 50 godini"; //Demo input 
+        String str="Тест: Г-н Жълтищев бързо фиксира, че English текст: The quick brown fox jumps over 12 lazy dogs! 1234567890."; //Demo input 
         System.out.println(str);
         String eha=Loki.op(str); // Tuk stawa Jabara.Jubara Encrypt
         System.out.println("eha = " + eha);
