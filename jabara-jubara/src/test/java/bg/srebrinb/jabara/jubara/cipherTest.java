@@ -62,10 +62,10 @@ public class cipherTest {
         String result = Loki.s135(tmp);
         assertEquals(input, result);
     }
-        @Test
+    @Test
     public void testS135Big() {
          System.out.println("Big 135");
-        String input = "Тест: Г-н Жълтищев бързо фиксира, че English текст: The quick brown fox jumps over 12 lazy dogs! 1234567890.";
+        String input = "Test_proba+Тест: Г-н Жълтищев бързо фиксира, че English текст: The quick brown fox jumps over 12 lazy dogs! 1234567890.";
         System.out.println("len:"+ input.length() +"\tinput = " + input);
         String tmp = Loki.s135(input);
         System.out.println("tmp:"+tmp);
